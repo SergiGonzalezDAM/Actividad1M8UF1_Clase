@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.alumnedam.actividad1m8uf1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/title"
+        android:fontFamily="sans-serif"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/setDateMain"
+        android:layout_alignBaseline="@+id/displayDate"
+        android:layout_alignBottom="@+id/displayDate"
+        android:layout_toRightOf="@+id/displayDate"
+        android:layout_toEndOf="@+id/displayDate"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:hint="@string/setDateMain" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/setFromMain"
+        android:hint="@string/setFromMain"
+        android:layout_alignBaseline="@+id/displayFrom"
+        android:layout_alignBottom="@+id/displayFrom"
+        android:layout_alignLeft="@+id/setDateMain"
+        android:layout_alignStart="@+id/setDateMain" />
+
+    <CheckBox
+        android:text="@string/checkSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkSex"
+        android:layout_alignBaseline="@+id/displayVices"
+        android:layout_alignBottom="@+id/displayVices"
+        android:layout_alignRight="@+id/displayFrom"
+        android:layout_alignEnd="@+id/displayFrom" />
+
+    <CheckBox
+        android:text="@string/checkDrugs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkDrugs"
+        android:layout_alignBaseline="@+id/checkSex"
+        android:layout_alignBottom="@+id/checkSex"
+        android:layout_toRightOf="@+id/checkSex"
+        android:layout_toEndOf="@+id/checkSex"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
+
+    <CheckBox
+        android:text="@string/checkAlcohol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkAlcohol"
+        android:layout_alignBaseline="@+id/checkDrugs"
+        android:layout_alignBottom="@+id/checkDrugs"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/setNameMain"
+        android:hint="@string/setNameMain"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/setDateMain"
+        android:layout_alignStart="@+id/setDateMain" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayFrom"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:text="@string/displayFrom"
+        android:layout_below="@+id/setDateMain"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerSex"
+        android:layout_below="@+id/setFromMain"
+        android:layout_alignLeft="@+id/displayName"
+        android:layout_alignStart="@+id/displayName"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:text="@string/displayVices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayVices"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_below="@+id/spinnerSex"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp" />
+
+    <Button
+        android:text="@string/buttonSendMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSendMain"
+        android:layout_below="@+id/checkSex"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" />
+
+    <TextView
+        android:text="@string/displayDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayDate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/setNameMain"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/displayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_alignBaseline="@+id/setNameMain"
+        android:layout_alignBottom="@+id/setNameMain"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
